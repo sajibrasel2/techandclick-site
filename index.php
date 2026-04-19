@@ -275,6 +275,7 @@
             <p>Movie search Telegram bot + latest movie updates channel (release alert)।</p>
             <div class="actions">
               <a class="btn btn-primary" href="https://t.me/GetLatestMoviesBot" target="_blank" rel="noopener">বট ওপেন করুন</a>
+              <a class="btn" href="latest-movies.php">সব মুভি</a>
               <a class="btn" href="movie-telegram-bot.php">কিওয়ার্ড/বিস্তারিত</a>
               <a class="link" href="https://t.me/GetLatestMoviesBot" target="_blank" rel="noopener">t.me/GetLatestMoviesBot</a>
             </div>
