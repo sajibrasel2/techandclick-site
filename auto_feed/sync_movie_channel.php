@@ -11,13 +11,18 @@
  */
 
 // ── Config ──────────────────────────────────────────────────────────
-$BOT_TOKEN   = '8294665841:AAG-MpBou_a3FgHoi0KFMAzWH5JBPwOaqu4';
+$BOT_TOKEN   = getenv('TC_TG_BOT_TOKEN') ?: '';
 $CHANNEL     = '@getlatestmoviebot';
 $BASE_URL    = 'https://techandclick.site';
 $SITE_ROOT   = dirname(__DIR__);          // .../public_html
 $MOVIE_DIR   = $SITE_ROOT . '/movie';     // .../public_html/movie
 $FEED_FILE   = __DIR__ . '/movie_posts.json';
 $LIMIT       = 20;                         // fetch last 20 posts
+
+if (!$BOT_TOKEN) {
+    echo "Missing env TC_TG_BOT_TOKEN\n";
+    exit(1);
+}
 
 // ── Ensure directories ─────────────────────────────────────────────
 if (!is_dir($MOVIE_DIR)) mkdir($MOVIE_DIR, 0755, true);
