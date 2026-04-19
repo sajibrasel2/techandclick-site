@@ -110,7 +110,7 @@
       </div>
 
       <div class="footer">
-        <div>© <span id="year"></span> Tech & Click</div>
+        <div>© <span id="year"></span> Tech & Click — techandclick.site</div>
         <div><a href="https://t.me/quickresulbd_bot" target="_blank" rel="noopener">t.me/quickresulbd_bot</a></div>
       </div>
     </div>
