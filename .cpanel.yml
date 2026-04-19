@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/techandc/public_html/
+    - /bin/cp -rf * $DEPLOYPATH
